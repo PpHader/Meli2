@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="flowers-bg">
+    <div id="falling-container"></div>
+
+    <div class="content text-center">
+        <h1> Feliz 21 de septiembre </h1>
+        <p class="mb-4">Ya que te gustan las flores amarillas y como estamos en distancia... <br>
+            Aquí tenés las tuyas, aunque sean digitales, preciosa 💛</p>
+
+        <!-- Botón para abrir modal -->
+        <button class="btn btn-lg btn-warning shadow-lg" data-bs-toggle="modal" data-bs-target="#floresModal">
+            Tus flores
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="floresModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content p-4 text-center">
+                <h2 class="mb-3">Tus flores amarillas 💛</h2>
+                <p class="mb-4">Solo para ti, asi virtual 🤭 <br> ¡Te amo!</p>
+
+                <!-- Carrusel -->
+                <div id="floresCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="img/1.png" class="d-block w-100" alt="Flores 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/2.png" class="d-block w-100" alt="Flores 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/3.png" class="d-block w-100" alt="Flores 3">
+                        </div>
+                    </div>
+
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#floresCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#floresCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+
+                <div class="mt-4">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
