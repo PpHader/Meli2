@@ -1,0 +1,114 @@
+/* Fondo degradado oscuro */
+.flowers-bg {
+    height: 100vh;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    position: relative;
+    color: #f8f8f8;
+}
+
+.content {
+    z-index: 10;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #ffd43b;
+    /* Amarillo elegante */
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+}
+
+/* Animación de elementos cayendo */
+#falling-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Para que no bloquee clics */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 10; /* Para que quede encima */
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.modal-content {
+    border-radius: 20px;
+    background: #fffbea;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #c77d00;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+    object-fit: contain;
+    /* 👈 ahora se ve la imagen completa */
+    max-height: 450px;
+    background-color: #fffbea;
+    /* 👈 color de fondo bonito por si sobran espacios */
+}
+
+/* Estilos para flores animadas en modal */
+#floresModal .modal-dialog {
+    max-width: 470px;
+    /* 👈 ajusta el ancho (puedes probar 500px también) */
+}
+
+#floresModal .modal-content {
+    padding: 2rem;
+    border-radius: 20px;
+    background: #fffbea;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrusel centrado y más limpio */
+#floresModal .carousel-inner img {
+    object-fit: contain;
+    max-height: 460px;
+    margin: auto;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fffbea, #fff5d1);
+}
+
+@keyframes modalFall {
+    to {
+        transform: translateY(320px) rotate(360deg);
+        opacity: 0;
+    }
+}
